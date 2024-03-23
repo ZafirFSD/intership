@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+    <form  >
+            <p>Do You Use CiviCRM?</p>
+            <div class="input-container">
+                <input type="radio" id="Yes" name="CRM">
+                <label for="Yes">Yes</label>
+                <input type="radio" id="No" name="CRM">
+                <label for="No">No</label>
+                <a href="#">(unselect)</a>
+            </div>
+            <p >How long have you been using <br />CIVICRM? </p>
+
+            <select name="CRMS" class="years">
+              <option>-select-</option>
+
+              <option value="1">1 Year</option>
+              <option value="2">2 Year</option>
+              <option value="3">3 Year</option>
+              <option value="4">4 Year</option>
+              <option value="5">5 Year</option>
+
+            </select>
+
+            <p >Which CMS do you use?</p>
+            <div >
+                <select name="CMS" >
+                    <option>-select-</option>
+                    <option value="1">WordPress</option>
+                    <option value="2">Joomla</option>
+                    <option value="3">Drupal</option>
+                    <option value="4">Magento</option>
+                    <option value="5">Concrete5</option>
+                </select>
+            </div>
+
+            <p >Your skill set</p>
+            <div class="skillcont">
+                <select name="SkillSet">
+                    <option>-select-</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>-JavaScript</option>
+                    <option>Php</option>
+                    <option>React</option>
+                </select>
+            </div>
+
+            <label for="email">Email *</label>
+            <input type="email" required name="email" class="home">
+
+            <label for="fname">First Name *</label>
+            <input type="text"  name="fname" class="home">
+
+            <label for="lname">Last Name *</label>
+            <input type="lname"  name="lname" class="home">
+
+            <p class="first_last">First and last name will be shared with the visitors to the site.</p>
+
+            <label for="home">Street Address (Home)</label>
+            <input type="text" style="width:26vw">
+
+            <label for="city">City (Home)</label>
+            <input type="text" class="home">
+
+            <label for="postal">Postal Code (Home)</label>
+            <input type="text" style="width: 13vw;">
+
+    </form>
+</head>
+<body>
+    
+</body>
+</html>

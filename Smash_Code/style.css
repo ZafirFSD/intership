@@ -1,0 +1,69 @@
+form {
+    display: grid;
+    grid-template-columns: 1.4fr 4fr; /* Two equal-width columns */
+    grid-template-rows:repeat(14,auto);
+    gap: 0.1vh; /* Gap between columns */
+    align-items: center; /* Center align items vertically */
+    border: 1px solid black;
+    padding: 20px 10px 10px 10px;
+    /* height:100% */
+}
+
+.first_last{
+    grid-column: 2;
+}
+
+
+p{
+    margin:0.5vh 0px
+}
+
+select{
+    appearance: none;
+    background-image: url("icon.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+}
+
+
+
+
+.input-container {
+     /* Place the input in the second column */
+    display: flex;
+    align-items: center;
+    gap:1vw
+}
+
+.home{
+    width:22vw;
+}
+
+.years{
+    width:15vw;
+}
+
+
+
+select {
+    border-radius: 0.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
