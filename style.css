@@ -55,6 +55,7 @@ select {
 
 select {
     border-radius: 0.4rem;
+    padding-left: 5px;
 }
 
 input {
