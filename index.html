@@ -10,7 +10,7 @@
 <body>
     <div class="form-wrap">
         <div class="legend">Name and Address</div>
-    <form> 
+    <form action="submit.html" method="post"> 
 
          <p>Do You Use CiviCRM?</p>
             <div class="input-container">
@@ -57,27 +57,27 @@
             </div>
 
             <label for="email">Email *</label>
-            <input  type="email" required name="email" class="home" >
+            <input  type="email" required name="email" class="home" required>
 
             <label for="fname">First Name *</label>
-            <input type="text"  name="fname" class="home">
+            <input type="text"  name="fname" class="home" required>
 
             <label for="lname">Last Name *</label>
-            <input type="lname"  name="lname" class="home">
+            <input type="lname" name="lname" class="home" required>
 
             <p class="first_last">First and last name will be shared with the visitors to the site.</p>
 
             <label for="home">Street Address (Home)</label>
-            <input type="text" style="width:26vw">
+            <input type="text" style="width:26vw" required>
 
             <label for="city">City (Home)</label>
-            <input type="text" class="home">
+            <input type="text" class="home" required>
 
             <label for="postal">Postal Code (Home)</label>
-            <input type="text" style="width: 11vw;">
+            <input type="text" style="width: 11vw;" required>
 
             <label for="country">Country (Home)</label>
-            <select name="country" class="country" style="width: 12vw;">
+            <select name="country" class="country" style="width: 18vw;">
                 <option value="">United States</option>
                 <option value="">United Kingdom</option>
                 <option value="">Canada</option>
@@ -96,10 +96,13 @@
                 <option value="">Argentena</option>
                 <option value="">Colombia</option>
                 <option value="">etc</option>
-            </select>       
+            </select>    
+         <div class="buttons">   
+            <button type="submit">Save</button>
+            <button>Cancel</button>
+         </div>
     </form>
-      <button>Save</button>
-      <button>Cancel</button>
+
     </div>
 </body>
 </html>
