@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Form</title>
-    <form  >
+    </head>
+    <body>
+    <div class="form-wrap">
+        <div class="legend">Name and Address</div>
+    <form>
             <p>Do You Use CiviCRM?</p>
             <div class="input-container">
                 <input type="radio" id="Yes" name="CRM">
@@ -53,7 +57,7 @@
             </div>
 
             <label for="email">Email *</label>
-            <input type="email" required name="email" class="home">
+            <input  type="email" required name="email" class="home" >
 
             <label for="fname">First Name *</label>
             <input type="text"  name="fname" class="home">
@@ -70,11 +74,33 @@
             <input type="text" class="home">
 
             <label for="postal">Postal Code (Home)</label>
-            <input type="text" style="width: 13vw;">
+            <input type="text" style="width: 11vw;">
 
+            <label for="country">Country (Home)</label>
+            <select name="country" style="width: 12vw;">
+                <option value="">United States</option>
+                <option value="">United Kingdom</option>
+                <option value="">Canada</option>
+                <option value="">Pakistan</option>
+                <option value="">Saudia Arabia</option>
+            </select>
+
+            <p class="first_last" style="grid-column: 2;">Your state/province and country of residence will 
+                be shared with other so folks can find <br> others
+                in their community.
+            </p>
+
+            <label for="state">State (Home)</label>
+            <select name="state" style="width: 22vw;">
+                <option value="">-select-</option>
+                <option value="">Argentena</option>
+                <option value="">Colombia</option>
+                <option value="">etc</option>
+            </select>       
     </form>
-</head>
-<body>
-    
+
+    <button>Save</button>
+    <button>Cancel</button>
+    </div>
 </body>
 </html>
