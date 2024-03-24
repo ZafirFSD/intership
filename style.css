@@ -1,3 +1,21 @@
+@media only screen and (max-width:600px) {
+    .years {
+        width:30vw;
+    }
+
+    .country {
+        width:50vw !important ;
+    }
+
+    .state {
+        width:50vw !important;
+    }
+
+    p,label {
+        font-size:0.5rem;
+    }
+}
+
 form {
     display: grid;
     grid-template-columns: 1.4fr 4fr; 
@@ -22,6 +40,14 @@ form {
     font-weight: bold;
 }
 
+label {
+    font-size:0.8rem;
+}
+
+option {
+    font-size:0.8rem
+}
+
 .first_last {
     grid-column: 2;
     font-weight: bold;
@@ -29,6 +55,7 @@ form {
 
 p {
     margin:0.5vh 0px;
+    font-size:0.8rem;
 }
 
 select {
@@ -52,6 +79,8 @@ select {
 .years {
     width:15vw;
 }
+
+
 
 select {
     border-radius: 0.4rem;
